@@ -1,0 +1,4 @@
+FROM openjdk:8
+EXPOSE 8095
+ADD target/Demo1-0.0.1-SNAPSHOT.jar Demo1-0.0.1-SNAPSHOT.jar
+ENTRYPOINT ["java","-jar","/Demo1-0.0.1-SNAPSHOT.jar"]
